@@ -60,7 +60,7 @@ Resources files are accessed through a virtual file system which implements the 
 Heaps already provides several file systems, such as:
 
  * [EmbedFileSystem](https://heaps.io/api/hxd/fs/EmbedFileSystem.html) will gives access to the resources which are embedded with your code (using haxe `-resource` compilation flag). On platforms such as JavaScript, this allows you to have both your code and assets stored in a single file.
- * [LocalFileSystem](https://heaps.io/api/hxd/fs/LocalFileSystem.html) which gives access to a local file system directory where your resources are stored. This require hard drive access so it is not available in the browser for example.
+ * [LocalFileSystem](https://heaps.io/api/hxd/fs/LocalFileSystem.html) which gives access to a local file system directory where your resources are stored. This requires hard drive access so it is not available in the browser for example.
  * [hxd.fmt.pak.FileSystem](https://heaps.io/api/hxd/fmt/pak/FileSystem.html) will read a `.pak` file which contains all resources packaged into a single binary. The PAK file can be loaded at runtime and several PAK files can be used, the latest loaded being able to override the resources declared in previously loaded PAK files.  
 
 You can initialize the resource loader and filesystem by yourself, or use one of the following shortcuts:
